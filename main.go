@@ -1,29 +1,31 @@
+
+
 package main
-
-import (
-	"log"
-	"net/http"
-	"os"
-
-	"github.com/gin-gonic/gin"
-	_ "github.com/heroku/x/hmetrics/onload"
-)
+import "github.com/kataras/iris"
 
 func main() {
-	port := os.Getenv("PORT")
+	app := iris.New()
+	// Load all templates from the "./views" folder
+	// where extension is ".html" and parse them
+	// using the standard `html/template` package.
+	app.RegisterView(iris.HTML("./views", ".html"))
 
-	if port == "" {
-		log.Fatal("$PORT must be set")
-	}
-
-	router := gin.New()
-	router.Use(gin.Logger())
-	router.LoadHTMLGlob("templates/*.tmpl.html")
-	router.Static("/static", "static")
-
-	router.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "restaurant.html", nil)
+	// Method:    GET
+	// Resource:  http://localhost:8080
+	app.Get("/", func(ctx iris.Context) {
+		// Bind: {{.message}} with "Hello world!"
+		ctx.ViewData("message", "Hello world!")
+		// Render template file: ./views/hello.html
+		ctx.View("hello.html")
 	})
 
-	router.Run(":" + port)
+	// Method:    GET
+	// Resource:  http://localhost:8080/user/42
+	app.Get("/user/{id:long}", func(ctx iris.Context) {
+		userID, _ := ctx.Params().GetInt64("id")
+		ctx.Writef("User ID: %d", userID)
+	})
+
+	// Start the server using a network address.
+	app.Run(iris.Addr(":8080"))
 }
