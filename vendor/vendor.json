@@ -78,5 +78,5 @@
 		}
 	],
     "rootPath": "github.com/VaccinalBowl/herokulunchhelper",
-    "heroku":{"install" : [ "./..." ],"goVersion": "go1.8"}
+    "heroku":{"install" : [ "." ],"goVersion": "go1.8"}
 }
