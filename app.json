@@ -1,11 +1,8 @@
 {
-  "name": "Start on Heroku: Go",
-  "description": "Go Getting Started Example App",
+  "name": "Lunch Time",
+  "description": "Sped less time deciding where to go for lunch",
   "keywords": [
-    "getting-started",
-    "go",
-    "sample",
-    "example"
+    "lunchtime",
   ],
   "image": "heroku/go:1.6",
   "mount_dir": "src/github.com/heroku/go-getting-started",
