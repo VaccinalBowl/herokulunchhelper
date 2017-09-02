@@ -33,6 +33,12 @@
 			"revisionTime": "2017-08-01T22:59:35Z"
 		},
 		{
+			"checksumSHA1": "gxgBDgywvlvajAKQuEwD/1Hq9lE=",
+			"path": "github.com/kataras/iris",
+			"revision": "247ed1ab3ac6b774e2580b0b890139cdf4495874",
+			"revisionTime": "2017-09-02T14:44:35Z"
+		},
+		{
 			"checksumSHA1": "ZUOd8OUOp+xdpB7p4w/O86Y8wyc=",
 			"path": "github.com/manucorporat/sse",
 			"revision": "c142f0f1baea5cef7f98a8a6c222f6134368c1f5"
@@ -59,5 +65,5 @@
 			"revision": "d627af88ac021317a280d320986282a6dc97549a"
 		}
 	],
-	"rootPath": "github.com/heroku/go-getting-started"
+	"rootPath": "github.com/VaccinalBowl/herokulunchhelper"
 }
