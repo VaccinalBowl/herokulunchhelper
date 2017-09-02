@@ -1,5 +1,11 @@
 {
 	"comment": "",
+	"heroku": {
+		"goVersion": "go1.8",
+		"install": [
+			"."
+		]
+	},
 	"ignore": "test",
 	"package": [
 		{
@@ -77,6 +83,5 @@
 			"revisionTime": "2017-08-12T16:00:11Z"
 		}
 	],
-    "rootPath": "github.com/VaccinalBowl/herokulunchhelper",
-    "heroku":{"install" : [ "." ],"goVersion": "go1.8"}
+	"rootPath": "github.com/VaccinalBowl/herokulunchhelper"
 }
