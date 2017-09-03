@@ -1,9 +1,65 @@
-<!-- file: ./views/hello.html -->
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Hello Page</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 400px;
+        }
+
+        .tableheading {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>{{.message}}</h1>
+<h3>Lunch Suggestion</h3>
+<table>
+    <thead>
+
+    </thead>
+    <tbody>
+    <tr>
+        <td class="tableheading">Name</td>
+        <td>{{.name}}</td>
+    </tr>
+    <tr>
+        <td class="tableheading">Food Type</td>
+        <td>{{.foodType}}</td>
+    </tr>
+    <tr>
+        <td class="tableheading">Distance</td>
+        <td>{{.distance}}</td>
+    </tr>
+    <tr>
+        <td class="tableheading">Price</td>
+        <td>{{.price}}</td>
+    </tr>
+    <tr>
+        <td class="tableheading">Address</td>
+        <td>{{.address}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<div id="map"></div>
+<script>
+    function initMap() {
+
+        var location = {lat: {{.lat}}, lng: {{.lng}}};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: "Hello"
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_4RfpKqWlD3mPtAWV38yg3glDFj9tka0&callback=initMap">
+</script>
 </body>
 </html>
