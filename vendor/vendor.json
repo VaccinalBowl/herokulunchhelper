@@ -3,8 +3,8 @@
 	"heroku": {
 		"goVersion": "go1.8",
 		"install": [
-		    "./cmd/github.com"
-		    "./cmd/golang.org"
+		    "./cmd/github.com",
+		    "./cmd/golang.org",
 		    "./cmd/gopkg.in"
 		]
 	},
