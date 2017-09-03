@@ -3,12 +3,10 @@
 	"heroku": {
 		"goVersion": "go1.8",
 		"install": [
-		    "./cmd/github.com",
-		    "./cmd/golang.org",
-		    "./cmd/gopkg.in"
+			"."
 		]
 	},
-	"ignore": "",
+	"ignore": "test",
 	"package": [
 		{
 			"checksumSHA1": "a4Quq5NWJ0ZrmuqBTqOWGoPhBRM=",
@@ -102,7 +100,7 @@
 			"revisionTime": "2017-09-02T14:44:35Z"
 		},
 		{
-			"checksumSHA1": "l/a/XlzAQfUCP3a4POXGhxkJXug=",
+			"checksumSHA1": "yqF125xVSkmfLpIVGrLlfE05IUk=",
 			"origin": "github.com/kataras/iris/vendor/github.com/golang/protobuf/proto",
 			"path": "github.com/golang/protobuf/proto",
 			"revision": "247ed1ab3ac6b774e2580b0b890139cdf4495874",
