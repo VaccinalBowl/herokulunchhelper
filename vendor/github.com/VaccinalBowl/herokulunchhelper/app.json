@@ -1,0 +1,16 @@
+{
+  "name": "Lunch Time",
+  "description": "Sped less time deciding where to go for lunch",
+  "keywords": [
+    "lunchtime",
+  ],
+  "image": "heroku/go:1.6",
+  "mount_dir": "src/github.com/heroku/go-getting-started",
+  "website": "http://github.com/heroku/go-getting-started",
+  "repository": "http://github.com/heroku/go-getting-started"
+  "heroku": {
+        "goVersion": "go1.9"
+  }
+
+
+}

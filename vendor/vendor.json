@@ -23,6 +23,12 @@
 			"revisionTime": "2017-09-02T14:44:35Z"
 		},
 		{
+			"checksumSHA1": "W4/nJsL8brPdQzm8ryBoDEiXn4o=",
+			"path": "github.com/VaccinalBowl/herokulunchhelper",
+			"revision": "7a1ca3bfa3107d9bdbceef712b09d579e62b57fb",
+			"revisionTime": "2017-09-03T12:56:45Z"
+		},
+		{
 			"checksumSHA1": "cwvU+h5218ENFDO+J8vAIpZbJls=",
 			"origin": "github.com/kataras/iris/vendor/github.com/ajg/form",
 			"path": "github.com/ajg/form",
